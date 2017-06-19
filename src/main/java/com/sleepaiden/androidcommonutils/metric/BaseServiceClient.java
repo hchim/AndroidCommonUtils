@@ -169,8 +169,9 @@ public abstract class BaseServiceClient {
         String signature = messageSigner.generateSignature("post", getPath(url), pair.second, headers);
         if (signature == null) {
             Log.wtf(TAG, "Failed to sign message");
+        } else {
+            builder.header(REQUEST_HEADER_DIGEST, signature);
         }
-        builder.header(REQUEST_HEADER_DIGEST, signature);
         return sendRequest(builder.build());
     }
 

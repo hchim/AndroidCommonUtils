@@ -16,10 +16,9 @@ public class FileUtils {
     public static final String TAG = "FileUtils";
 
     public static String getDataDir(Context context) throws Exception {
-//        return context.getPackageManager()
-//                .getPackageInfo(context.getPackageName(), 0)
-//                .applicationInfo.dataDir;
-        return "/sdcard";
+        return context.getPackageManager()
+                .getPackageInfo(context.getPackageName(), 0)
+                .applicationInfo.dataDir;
     }
 
     public static boolean moveFile(String source, String dest, boolean force) {
