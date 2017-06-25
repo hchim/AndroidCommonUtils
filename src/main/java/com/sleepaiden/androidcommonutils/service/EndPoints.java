@@ -1,4 +1,4 @@
-package com.sleepaiden.androidcommonutils.metric;
+package com.sleepaiden.androidcommonutils.service;
 
 public class EndPoints {
     public static final String BASE_ENDPOINT = "https://api.sleepaiden.com";

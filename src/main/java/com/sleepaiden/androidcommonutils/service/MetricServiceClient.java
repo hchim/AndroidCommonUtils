@@ -1,4 +1,4 @@
-package com.sleepaiden.androidcommonutils.metric;
+package com.sleepaiden.androidcommonutils.service;
 
 import android.util.Log;
 
@@ -6,7 +6,7 @@ import com.sleepaiden.androidcommonutils.config.AppConfig;
 import com.sleepaiden.androidcommonutils.exceptions.ConnectionFailureException;
 import com.sleepaiden.androidcommonutils.exceptions.InternalServerException;
 import com.sleepaiden.androidcommonutils.exceptions.InvalidRequestException;
-import com.sleepaiden.androidcommonutils.metric.MetricHelper.MetricType;
+import com.sleepaiden.androidcommonutils.service.MetricHelper.MetricType;
 import org.json.JSONException;
 import org.json.JSONObject;
 
