@@ -105,7 +105,7 @@ public abstract class BaseServiceClient {
                 .delete();
         headers = addHeaders(builder, headers);
         //sign request
-        String signature = messageSigner.generateSignature("post", getPath(url), null, headers);
+        String signature = messageSigner.generateSignature("delete", getPath(url), null, headers);
         if (signature == null) {
             Log.wtf(TAG, "Failed to sign message");
         }

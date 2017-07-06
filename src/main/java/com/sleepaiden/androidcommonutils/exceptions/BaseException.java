@@ -2,7 +2,7 @@ package com.sleepaiden.androidcommonutils.exceptions;
 
 public class BaseException extends Exception {
     String errorCode;
-
+    
     public BaseException(String errorCode) {
         this.errorCode = errorCode;
     }
